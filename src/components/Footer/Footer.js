@@ -1,8 +1,18 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import React from 'react'
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { SocialIcons } from '../Header/HeaderStyles'
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from './FooterStyles'
 
 const Footer = () => {
   return (
@@ -10,33 +20,33 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
+          <LinkItem href='+221 77 225 25 50'>+221 77 225 25 50</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
+          <LinkItem href='mailto:momocoly42@gmail.com'>
+            momocoly42@gmail.com
           </LinkItem>
         </LinkColumn>
       </LinkList>
-      <SocialIconsContainer>
+      <SocialContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://google.com">
-            <AiFillGithub size="3rem" />
+          <SocialIcons href='https://github.com/Mamadou42'>
+            <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillLinkedin size="3rem" />
+          <SocialIcons href='https://www.linkedin.com/in/momocoly'>
+            <AiFillLinkedin size='3rem' />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillInstagram size="3rem" />
+          <SocialIcons href='https://www.instagram.com/momo_coly/'>
+            <AiFillInstagram size='3rem' />
           </SocialIcons>
         </SocialContainer>
-      </SocialIconsContainer>
+      </SocialContainer>
     </FooterWrapper>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
