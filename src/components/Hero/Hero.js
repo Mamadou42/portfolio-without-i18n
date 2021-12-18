@@ -8,6 +8,11 @@ import {
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
 
+const downloadCV = () => {
+  const url = '/assets/files/mamadoucv.pdf'
+  window.open(url, '_blank')
+}
+
 const Hero = (props) => (
   <>
     <Section row nopadding>
@@ -21,7 +26,9 @@ const Hero = (props) => (
           My Purpose is to become one of the bests React and Node developers in
           the world.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button target='_blank' onClick={downloadCV}>
+          Download CV
+        </Button>
       </LeftSection>
     </Section>
   </>
